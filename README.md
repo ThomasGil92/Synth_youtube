@@ -14,8 +14,8 @@ A Next.js application that automatically generates text summaries from YouTube v
 1. Clone the repository:
 
     ```bash
-    git clone [YOUR_REPO_URL]
-    cd youtube-summarizer
+    git clone git@github.com:ThomasGil92/Synth_youtube.git
+    cd Synth_youtube
     ```
 
 2. Install dependencies:
@@ -52,8 +52,8 @@ To obtain an OpenAI API key:
 ## 💻 Usage
 
 1. Access the application through your browser
-2. Paste the YouTube video URL you want to summarize
-3. Click on "Generate Summary"
+2. Paste the YouTube video URL or ID you want to summarize
+3. Click on "Résumer"
 4. Wait while the summary is being generated
 5. The summary will automatically display once completed
 
@@ -61,8 +61,9 @@ To obtain an OpenAI API key:
 
 - [Next.js](https://nextjs.org/)
 - [OpenAI API](https://openai.com/api/)
-- [YouTube Data API](https://developers.google.com/youtube/v3)
+- [Youtube-transcript](https://www.npmjs.com/package/youtube-transcript)
 - [TailwindCSS](https://tailwindcss.com/)
+- [Shadcn](https://ui.shadcn.com/)
 
 ## 📝 License
 
@@ -87,4 +88,3 @@ Contributions are welcome! Feel free to:
 
 If you encounter any issues or have questions, feel free to:
 - Open an issue on GitHub
-- Contact me at [your_email@example.com]
