@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# YouTube Video Summarizer 📹
 
-## Getting Started
+A Next.js application that automatically generates text summaries from YouTube videos using the OpenAI API.
 
-First, run the development server:
+## 🌟 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- YouTube video summary generation
+- Clean and intuitive user interface
+- Multilingual summary support
+- Compatible with latest YouTube videos
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    ```bash
+    git clone [YOUR_REPO_URL]
+    cd youtube-summarizer
+    ```
 
-## Learn More
+2. Install dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+    ```bash
+    pnpm install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Configure environment variables:
+   - Create a `.env` file in the root directory
+   - Add your OpenAI API key:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    ```env
+    OPENAI_API_KEY=your_api_key_here
+    ```
 
-## Deploy on Vercel
+4. Start the development server:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    pnpm dev
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The application will be available at: `http://localhost:3000`
+
+## 🔑 OpenAI API Key Configuration
+
+To obtain an OpenAI API key:
+1. Go to [OpenAI](https://platform.openai.com/signup)
+2. Create an account or sign in
+3. Navigate to the API Keys section
+4. Generate a new API key
+5. Copy the key to your `.env` file
+
+## 💻 Usage
+
+1. Access the application through your browser
+2. Paste the YouTube video URL you want to summarize
+3. Click on "Generate Summary"
+4. Wait while the summary is being generated
+5. The summary will automatically display once completed
+
+## 🛠 Tech Stack
+
+- [Next.js](https://nextjs.org/)
+- [OpenAI API](https://openai.com/api/)
+- [YouTube Data API](https://developers.google.com/youtube/v3)
+- [TailwindCSS](https://tailwindcss.com/)
+
+## 📝 License
+
+MIT
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+1. Fork the project
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## ⚠️ Limitations
+
+- Requires a valid OpenAI API key
+- Longer videos may take more time to process
+- Summary quality depends on available transcription quality
+
+## 📞 Support
+
+If you encounter any issues or have questions, feel free to:
+- Open an issue on GitHub
+- Contact me at [your_email@example.com]
